@@ -36,11 +36,14 @@ public class C_Proveedor extends javax.swing.JFrame {
     public void Borra(){
         String a= id_proveedores.getText();
         
-        String SQL = "delete from ncompras where id_proveedores= '"+a+"'";
+        String SQL = "delete from proveedores where id_proveedor= '"+a+"'";
         try {
              PreparedStatement pst= con.prepareStatement(SQL);
              pst.executeUpdate();
              JOptionPane.showMessageDialog(null, "Borrado con exito");
+             OpcionesProveedores1 b= new OpcionesProveedores1();
+             b.setVisible(true);
+             this.dispose();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "No se pudo borrar"+ e.getMessage());
        }
@@ -61,7 +64,8 @@ public class C_Proveedor extends javax.swing.JFrame {
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jLabel1 = new javax.swing.JLabel();
         id_proveedores = new javax.swing.JTextField();
@@ -86,20 +90,32 @@ public class C_Proveedor extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 150, 41));
 
         id_proveedores.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
-        id_proveedores.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
+        id_proveedores.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
                 id_proveedoresMouseEntered(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
                 id_proveedoresMouseExited(evt);
+            }
+        });
+        id_proveedores.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                id_proveedoresActionPerformed(evt);
             }
         });
         getContentPane().add(id_proveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 160, -1));
 
         Buscar.setBackground(new java.awt.Color(255, 255, 0));
         Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/busca.png"))); // NOI18N
-        Buscar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Buscar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 BuscarActionPerformed(evt);
             }
         });
@@ -108,8 +124,10 @@ public class C_Proveedor extends javax.swing.JFrame {
         Eliminar.setBackground(new java.awt.Color(255, 0, 0));
         Eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/papelera.png"))); // NOI18N
         Eliminar.setEnabled(false);
-        Eliminar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Eliminar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 EliminarActionPerformed(evt);
             }
         });
@@ -125,8 +143,10 @@ public class C_Proveedor extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/Exit.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setFocusPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButton1ActionPerformed(evt);
             }
         });
@@ -181,6 +201,11 @@ public class C_Proveedor extends javax.swing.JFrame {
     private void id_proveedoresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_id_proveedoresMouseExited
         Mensaje.setVisible(false);
     }//GEN-LAST:event_id_proveedoresMouseExited
+
+    private void id_proveedoresActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_id_proveedoresActionPerformed
+    {//GEN-HEADEREND:event_id_proveedoresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_id_proveedoresActionPerformed
 
     /**
      * @param args the command line arguments
