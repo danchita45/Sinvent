@@ -119,7 +119,7 @@ public class C_Proveedor extends javax.swing.JFrame {
                 BuscarActionPerformed(evt);
             }
         });
-        getContentPane().add(Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 70, -1));
+        getContentPane().add(Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 70, -1));
 
         Eliminar.setBackground(new java.awt.Color(255, 0, 0));
         Eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/papelera.png"))); // NOI18N
@@ -131,7 +131,7 @@ public class C_Proveedor extends javax.swing.JFrame {
                 EliminarActionPerformed(evt);
             }
         });
-        getContentPane().add(Eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 70, -1));
+        getContentPane().add(Eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 70, -1));
 
         jLabel2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
         jLabel2.setText("N° Proveedor:");
@@ -150,7 +150,7 @@ public class C_Proveedor extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 0, 32, 28));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 32, 28));
 
         Mensaje.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
         Mensaje.setText("Se recomienda ingresar un valor menor al actual");
@@ -160,19 +160,19 @@ public class C_Proveedor extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
         jLabel4.setText("Buscar");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, 60, 29));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 60, 29));
 
         jLabel3.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
         jLabel3.setText("Eliminar");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 70, 29));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 70, 29));
 
         jLabel5.setFont(new java.awt.Font("Sitka Banner", 1, 36)); // NOI18N
         jLabel5.setText("Eliminar Proveedor");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/fondo.jpg"))); // NOI18N
         jLabel7.setText("jLabel7");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 310));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 310));
 
         pack();
         setLocationRelativeTo(null);

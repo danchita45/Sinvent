@@ -25,7 +25,8 @@ public class Inicio extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         Compra = new javax.swing.JButton();
         Productos = new javax.swing.JButton();
@@ -43,8 +44,10 @@ public class Inicio extends javax.swing.JFrame {
 
         Compra.setBackground(new java.awt.Color(0, 153, 255));
         Compra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/compras.png"))); // NOI18N
-        Compra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Compra.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 CompraActionPerformed(evt);
             }
         });
@@ -52,8 +55,10 @@ public class Inicio extends javax.swing.JFrame {
 
         Productos.setBackground(new java.awt.Color(0, 153, 255));
         Productos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/productos.png"))); // NOI18N
-        Productos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Productos.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 ProductosActionPerformed(evt);
             }
         });
@@ -61,8 +66,10 @@ public class Inicio extends javax.swing.JFrame {
 
         Proveedores.setBackground(new java.awt.Color(0, 153, 255));
         Proveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/prov.png"))); // NOI18N
-        Proveedores.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Proveedores.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 ProveedoresActionPerformed(evt);
             }
         });
@@ -75,8 +82,10 @@ public class Inicio extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sinvent/Exit.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setFocusPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButton1ActionPerformed(evt);
             }
         });
